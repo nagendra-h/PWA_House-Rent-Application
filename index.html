@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="manifest.json">
+    <script src="./js/app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/hp_logo.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Marck+Script&family=Rubik+Glitch&display=swap"
+      rel="stylesheet">
+    <title>Home</title>
+    <style>
+      html,
+      body {
+        margin: 0px;
+        height: 95%;
+        background: linear-gradient(45deg, rgb(214, 146, 146) 0 50%, rgb(40, 5, 70) 50% 100%);
+
+
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      a :hover {
+        color: rgba(255, 255, 255, 0.562);
+      }
+
+      .my-container {
+        color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .my-card {
+        color: rgb(187, 126, 223);
+        background-color: rgb(24, 22, 22);
+        padding: 2em;
+        width: 40em;
+        height: 20em;
+        border-radius: 30px;
+      }
+
+      .type-container {
+        display: inline-block;
+      }
+
+      .type {
+        font-family: 'Marck Script', cursive;
+        padding: 10px;
+        font-weight: bold;
+        overflow: hidden;
+        border-right: .15em solid black;
+        white-space: nowrap;
+        animation:
+          typing 2s forwards,
+          blink .75s infinite;
+        font-size: 40px;
+        width: 0;
+      }
+
+      
+
+      #home {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+      }
+
+      #about {
+        position: absolute;
+        top: 46%;
+        left: 13%;
+
+      }
+
+      #skills {
+        position: absolute;
+        top: 67%;
+        left: 85%;
+        color: black;
+      }
+
+     
+
+      #Tr {
+        position: absolute;
+        top: 26%;
+        left: 76%;
+        color: black;
+      }
+
+      #contact {
+        position: absolute;
+        top: 12%;
+        left: 40%;
+        color: black;
+      }
+
+      #home:hover,
+      #about:hover,
+      #skills:hover,
+      #Tr:hover,
+      #education:hover,
+      #statistics:hover,
+      #contact:hover {
+       
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transform-origin: 50% 100%;
+        font-size: 4em;
+        transition: font-size 0.5s ease-in-out;
+      }
+
+     
+
+      .text-style {
+        font-family: 'Times New Roman', cursive;
+        font-size: 3.5em;
+      }
+
+      @media (max-width: 80em) {
+
+        #home,
+        #about,
+        #skills,
+        #Tr,
+        #education,
+        #statistics,
+        #contact {
+          display: none;
+        }
+
+        .my-card {
+          text-align: center;
+          padding: 2em;
+          width: 35em;
+          height: 27em;
+          border-radius: 2em;
+        }
+
+        h3 {
+          font-size: 1em;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        .type {
+          font-size: 1.5em;
+        }
+      }
+
+      /* #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -10;
+      } */
+
+      .navbar {
+        background-color: transparent();
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fullwidth d-block">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="./index.html"><img class="rounded-circle" src="./assets/logo.png" width="50px"
+              height="50px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./House.html">House</a>
+              </li>
+             
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Location</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- <video autoplay muted loop id="myVideo" style="">
+      <source src="./assets/blackandblack.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> -->
+    <div class="my-container">
+      <div class="my-card">
+        <h3 style="color: rgb(230, 112, 230);">Hello.. Tenants </h3>
+        <h3 class="" style="font-family: 'Black Ops One', cursive; font-size: 3em;">Welcome to </h1>
+        <h1 class="" style="font-family: 'Black Ops One', cursive; font-size: 3em;">  MAGIC FLOOR</h1>
+       
+      </div>
+      <a href="./index.html">
+        <span class="text-style" id="home">Home</span>
+      </a>
+      <a href="./about.html">
+        <span class="text-style" id="about">About</span>
+      </a>
+     
+      <a href="./House.html">
+        <span class="text-style" id="Tr">Trending</span>
+      </a>
+     
+      <a href="./contact.html">
+        <span class="text-style" id="contact">Contact</span>
+      </a>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+    <!-- <script>
+      document.getElementById("myVideo").playbackRate = 0.5;
+    </script> -->
+  </body>
+
+</html>

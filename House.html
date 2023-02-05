@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Projects</title>
+    <style>
+      nav {
+        background-color: black;
+      }
+
+      .jumbotron {
+        background-size: cover;
+        background: linear-gradient(rgb(110, 29, 29), rgb(47, 165, 216));
+        color: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      .button {
+        display: none;
+        transition: all 1s ease-out;
+      }
+
+      h5 {
+        transition: all .5s ease-out;
+      }
+
+      .card {
+        border-radius: 2em;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+
+      }
+
+      .img-effects {
+        border-radius: 2em;
+        transition: all .5s ease-out;
+      }
+
+      .card-style:hover .button {
+        display: inline-block;
+      }
+
+      .card-style:hover .img-effects {
+        filter: blur(3px);
+      }
+
+      .card-style:hover .card-title {
+        font-size: 24px;
+      }
+    </style>
+    <title>Projects</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand" href="./index.html"><img class="rounded-circle" src="./assets/logo.png" width="50px"
+              height="50px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./House.html">Trending</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Location</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="">
+        <div class="jumbotron ">
+          <h1 class="text-center">House</h1>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mb-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/house1.jpg" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">Redux</h5>
+                      
+              </div>
+            </div>
+            <p>    Redux Appartment</p><p>Rental Value: ₹20,000 </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mb-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/house2.jpg" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">Silicone</h5>
+                
+              </div>
+            </div>
+            <p>  Silicone Appartment</p>
+            <p> Rental Value: ₹30,000 </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mb-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/house3.jpg" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">Basappa Layout</h5>
+                <a href="https://github.com/photonwings/lottery-frontend" target="_blank"
+                  class="btn btn-outline-secondary mt-4 button"><i class="fa-brands fa-github fa-2x"></i> Source
+                  Code</a>
+               
+              </div>
+            </div>
+            <p> Basappa Layout</p>
+            <p> Rental Value: ₹24,000 </p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mt-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/mhn.png" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">Sai Nandana Apartment</h5>
+              
+              </div>
+            </div>
+            <p> Sai Nandana Apartment</p>
+            <p> Rental Value: ₹14,000 </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mt-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/magic.png" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">MHN Apartment</h5>
+                <a href="https://github.com/photonwings/expression-conversion" target="_blank"
+                  class="btn btn-outline-secondary mt-4 button"><i class="fa-brands fa-github fa-2x"></i> Source
+                  Code</a>
+                  <a href="https://conversion.photonwings.me" target="_blank"
+                  class="btn btn-outline-secondary mt-4 button"><i class="fa-solid fa-laptop-code fa-2x"></i></i> Website
+                </a>
+              </div>
+            </div>
+            <p> MHN Apartment</p>
+            <p> Rental Value: ₹21,000 </p>
+          </div>
+        </div>
+        <!-- <div class="col-sm-12 col-md-6 col-xl-4 d-flex justify-content-center">
+          <div class="card text-center card-style mt-3 ml-3 mr-3" style="width: 20rem; height: 23rem;">
+            <img class="card-img img-effects" src="./assets/spotify.jpg" style="max-height:23rem">
+            <div class="card-img-overlay">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-white">Spotify Clone</h5>
+                <a href="https://github.com/photonwings" target="_blank"
+                  class="btn btn-outline-secondary mt-4 button"><i class="fa-brands fa-github fa-2x"></i> Source
+                  Code</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
