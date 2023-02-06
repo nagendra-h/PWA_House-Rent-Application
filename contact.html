@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Contact</title>
+    <style>
+      nav {
+        background-color: black;
+      }
+
+      .jumbotron {
+        background-size: cover;
+        background: linear-gradient(rgb(110, 29, 29), rgb(47, 165, 216));
+        color: white;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      span {
+        font-size: 24px;
+      }
+
+      .my-card {
+        border-radius: 30px;
+        background-color: rgb(224, 212, 212);
+        color: rgb(182, 60, 141);
+      }
+
+    </style>
+    <title>Contact Me</title>
+  </head>
+
+
+  <body>
+    <header>
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="./index.html"><img class="rounded-circle" src="./assets/logo.png" width="50px"
+              height="50px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="./House.html">Trending</a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Location</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+      <div class="">
+        <div class="jumbotron ">
+          <h1 class="text-center">Location</h1>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 mt-3 mb-3">
+          <div class="card my-card" style="width:100%; height:100%;">
+            <div class="card-body">
+              <div class="row pt-4 pb-4">
+               
+                <div class="col d-flex justify-content-center"><span>Kempegowda International Airport</span></div>
+              </div>
+              <div class="row pt-4 pb-4">
+                
+                <div class="col d-flex justify-content-center"><span>Aerospace Park:KIADB’s 1214 hectares (3000 acres) </span></div>
+              </div>
+              <div class="row pt-4 pb-4">
+               
+                <div class="col d-flex justify-content-center"><span>Companies currently operating:Wipro, Shell Technologies, Centrum electronics</span></div>
+              </div>
+              <div class="row pt-4 pb-4">
+               
+                <div class="col d-flex justify-content-center"><span>Proposed corporate establishments:Boeing Aircraft Services, Philips, IBM</span>
+                  
+                </div>
+              </div>
+              <div class="row pt-4 pb-4">
+               
+                <div class="col d-flex justify-content-center"><span>The Happiness of being centrally located</span>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 mt-3 mb-3">
+          <div class="card my-card">
+            <div class="card-body">
+              <form action="https://www.google.co.in/maps/place/Bengaluru,+Karnataka/@12.95396,77.4908551,11z/data=!3m1!4b1!4m5!3m4!1s0x3bae1670c9b44e6d:0xf8dfc3e8517e4fe0!8m2!3d12.9715987!4d77.5945627?hl=en-GB&authuser=0" target="_blank">
+                <center>
+                  <input type="text" class="form-control rounded-pill mb-4 mt-4 w-75" id="name"
+                    placeholder="Your Name" name="name" />
+                  <input type="email" class="form-control rounded-pill mb-4 mt-4 w-75" id="email"
+                    placeholder="Your Email" name="email" />
+                  <input type="text" class="form-control rounded-pill mb-4 mt-4 w-75" id="subject"
+                    placeholder="Subject" name="subject" />
+                  <textarea id="message" rows="8" style="border-radius: 25px; resize: none;"
+                    class="d-block mt-4 mb-4 w-75 p-4" placeholder=" Type your message" name="message" ></textarea>
+                    <input type = "button" onclick = "yes()" value = "Send Message" class="btn btn-outline-secondary mb-4" />
+                  
+                </center>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+    function yes(){
+      
+     
+      
+      console.log(document.getElementById("name").value);
+      console.log(document.getElementById("email").value);
+      console.log(document.getElementById("subject").value);
+      let n=document.getElementById("message").value;
+      let n1=document.getElementById("subject").value;
+
+      Email.send({
+        
+          Host : "smtp.elasticemail.com",
+          Username : "nagendraherle@gmail.com",
+          Password : "646295052CCD19770E82C34A29D24BF40C74",
+          To :document.getElementById("email").value,
+          From : "nagendraherle@gmail.com",
+          Subject : n1,
+          Body :  n
+      }).then(
+        message => alert(message)
+      );
+      
+    }
+    
+    </script>
+    
+    
+    
+  
+  </body>
+
+</html>
